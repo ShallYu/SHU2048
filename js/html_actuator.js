@@ -82,7 +82,7 @@ HTMLActuator.prototype.addTile = function (tile) {
   // We can't use classlist because it somehow glitches when replacing classes
   var classes = ["tile", "tile-" + tile.value, positionClass];
 
-  if (tile.value > 131072) classes.push("tile-super");
+  if (tile.value > 2048) classes.push("tile-super");
 
   this.applyClasses(wrapper, classes);
 
@@ -153,7 +153,7 @@ HTMLActuator.prototype.message = function (won) {
   var mytxt=new Array(14);
   mytxt[0]="至少去见见学力学的吧！";
   mytxt[1]="E=mc^2 Boob!!!";
-  mytxt[2]="拉普拉斯变换算到爆炸！";
+  mytxt[2]="拉普拉斯变换算到爆！";
   mytxt[3]="p=F/S s->0！";
   mytxt[4]="C7H8+3NO2-3H=C7H5N3O6+21O2---->10H2O+6N2+28CO2！";
   mytxt[5]="Ahh OOOOh~";
@@ -169,7 +169,7 @@ HTMLActuator.prototype.message = function (won) {
 
   var text3 = function (m) { var r = 0; while (m > 1) r++, m >>= 1; return r; }
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "中华人民共和国万岁！" : mytxt[text3(maxscore)-3];
+  var message = won ? "以君之智勇，来我大物理改变世界。" : mytxt[text3(maxscore)-3];
 
   if (typeof ga !== "undefined") {
     ga("send", "event", "game", "end", type, this.score);
