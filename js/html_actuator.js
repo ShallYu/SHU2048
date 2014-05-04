@@ -64,7 +64,7 @@ HTMLActuator.prototype.addTile = function (tile) {
   text[8] = "化学系";
   text[9] = "理学院";
   text[10] = "";
-  text[11] = "再往上<br>就没了";
+  text[11] = "我爱<br>物理系";
   text[12] = "";
   text[13] = "";
   text[14] = "";
@@ -169,7 +169,7 @@ HTMLActuator.prototype.message = function (won) {
 
   var text3 = function (m) { var r = 0; while (m > 1) r++, m >>= 1; return r; }
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "以君之智勇，来我大物理改变世界。" : mytxt[text3(maxscore)-3];
+  var message = won ? "以君之智勇，来我大物理改变世界。" : mytxt[text3(maxscore)-5];
 
   if (typeof ga !== "undefined") {
     ga("send", "event", "game", "end", type, this.score);
