@@ -155,12 +155,12 @@ HTMLActuator.prototype.message = function (won) {
   mytxt[1]="E=mc^2 Boob!!!";
   mytxt[2]="拉普拉斯变换算到爆！";
   mytxt[3]="p=F/S s->0！";
-  mytxt[4]="C7H8+3NO2-3H=C7H5N3O6+21O2-->10H2O+6N2+28CO2";
+  mytxt[4]="欢迎报考物理系~";
   mytxt[5]="Ahh OOOOh~";
   mytxt[6]="神的震慑!";
-  mytxt[7]="Loading……";
-  mytxt[8]="Loading……";
-  mytxt[9]="Loading……";
+  mytxt[7]="欢迎报考物理系~";
+  mytxt[8]="欢迎报考物理系~";
+  mytxt[9]="欢迎报考物理系~";
   mytxt[10]="Loading……";
   mytxt[11]="Loading……";
   mytxt[12]="Loading……";
@@ -189,18 +189,13 @@ HTMLActuator.prototype.clearMessage = function () {
   this.messageContainer.classList.remove("game-over");
 };
 
-HTMLActuator.prototype.scoreTweetButton = function () {
-  var tweet = document.createElement("a");
-  tweet.classList.add("twitter-share-button");
-  tweet.setAttribute("href", "https://twitter.com/share");
-  tweet.setAttribute("data-via", "oprilzeng");
-  tweet.setAttribute("data-url", "http://oprilzeng.github.io/2048/full");
-  tweet.setAttribute("data-counturl", "http://oprilzeng.github.io/2048/full/");
-  tweet.textContent = "Tweet";
-
-  var text = "I scored " + this.score + " points at PRC2048-Full edition, a game where you " +
-             "join numbers to score high! #PRC2048";
-  tweet.setAttribute("data-text", text);
-
-  return tweet;
+HTMLActuator.prototype.scoreTweetButton = function shareClick() {
+  var rrShareParam = {
+      resourceUrl : 'http://shallyu.github.io/SHU2048/', //分享的资源Url
+      srcUrl : 'http://shallyu.github.io/SHU2048/',  //分享的资源来源Url,默认为header中的Referer,如果分享失败可以调整此值为resourceUrl试试
+      pic : 'http://shallyu.github.io/SHU2048/meta/apple-touch-icon.png',   //分享的主题图片Url
+      title : '上大物理系2048',   //分享的标题
+      description : '欢迎大家关注上大物理系，学弟学妹们，我们在这等你~'  //分享的详细描述
+    };
+    rrShareOnclick(rrShareParam);
 };
