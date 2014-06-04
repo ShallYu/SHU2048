@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <html>
 <head>This is shu2048</head>
 <body>
@@ -7,6 +8,8 @@
 </html>
 
 =======
+=======
+>>>>>>> 4cd13360648da0c8ebf09f0e8b5cbd45d4bd4b21
 ﻿
 <!DOCTYPE html>
 <html>
@@ -121,4 +124,7 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 <img border="0" src="style/131072.jpg" width="0" height="0"><img border="0" src="style/65536.jpg" width="0" height="0">
 </body>
 </html>
+<<<<<<< HEAD
 >>>>>>> cd32e598261303bc0bec2a29e7edce15d72457a3
+=======
+>>>>>>> 4cd13360648da0c8ebf09f0e8b5cbd45d4bd4b21
