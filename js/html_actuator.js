@@ -155,21 +155,18 @@ HTMLActuator.prototype.message = function (won) {
   mytxt[1]="E=mc^2 Boob!!!";
   mytxt[2]="拉普拉斯变换算到爆！";
   mytxt[3]="p=F/S s->0！";
-<<<<<<< HEAD
   mytxt[4]="C7H8+3NO2-3H=C7H5N3O6+21O2---->10H2O+6N2+28CO2！";
   mytxt[5]="Ahh OOOOh~";
   mytxt[6]="Oh,MY GOD!";
   mytxt[7]="Loading……";
   mytxt[8]="Loading……";
   mytxt[9]="Loading……";
-=======
   mytxt[4]="欢迎报考物理系~";
   mytxt[5]="Ahh OOOOh~";
   mytxt[6]="神的震慑!";
   mytxt[7]="欢迎报考物理系~";
   mytxt[8]="欢迎报考物理系~";
   mytxt[9]="欢迎报考物理系~";
->>>>>>> 4cd13360648da0c8ebf09f0e8b5cbd45d4bd4b21
   mytxt[10]="Loading……";
   mytxt[11]="Loading……";
   mytxt[12]="Loading……";
@@ -178,11 +175,8 @@ HTMLActuator.prototype.message = function (won) {
 
   var text3 = function (m) { var r = 0; while (m > 1) r++, m >>= 1; return r; }
   var type    = won ? "game-won" : "game-over";
-<<<<<<< HEAD
   var message = won ? "以君之智勇，来我大物理改变世界。" : mytxt[text3(maxscore)-5];
-=======
   var message = won ? "以君之智勇，来我大物理改变世界。" : mytxt[text3(maxscore)-4];
->>>>>>> 4cd13360648da0c8ebf09f0e8b5cbd45d4bd4b21
 
   if (typeof ga !== "undefined") {
     ga("send", "event", "game", "end", type, this.score);
@@ -202,7 +196,6 @@ HTMLActuator.prototype.clearMessage = function () {
   this.messageContainer.classList.remove("game-over");
 };
 
-<<<<<<< HEAD
 HTMLActuator.prototype.scoreTweetButton = function () {
   var tweet = document.createElement("a");
   tweet.classList.add("twitter-share-button");
@@ -217,7 +210,6 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   tweet.setAttribute("data-text", text);
 
   return tweet;
-=======
 HTMLActuator.prototype.scoreTweetButton = function shareClick() {
   var rrShareParam = {
       resourceUrl : 'http://shallyu.github.io/SHU2048/', //分享的资源Url
@@ -227,5 +219,4 @@ HTMLActuator.prototype.scoreTweetButton = function shareClick() {
       description : '欢迎大家关注上大物理系，学弟学妹们，我们在这等你~'  //分享的详细描述
     };
     rrShareOnclick(rrShareParam);
->>>>>>> 4cd13360648da0c8ebf09f0e8b5cbd45d4bd4b21
 };
