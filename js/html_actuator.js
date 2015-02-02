@@ -113,7 +113,6 @@ HTMLActuator.prototype.addTile = function (tile) {
 
   // Put the tile on the board
   this.tileContainer.appendChild(wrapper);
-  console.log('add up')
 };
 
 HTMLActuator.prototype.applyClasses = function (element, classes) {
