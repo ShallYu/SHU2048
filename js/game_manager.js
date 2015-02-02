@@ -1,5 +1,5 @@
 var maxscore = 2;
-
+console.log('manager up')
 function GameManager(size, InputManager, Actuator, ScoreManager) {
   this.size         = size; // Size of the grid
   this.inputManager = new InputManager;
