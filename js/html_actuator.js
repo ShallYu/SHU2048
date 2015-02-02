@@ -210,6 +210,7 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   tweet.setAttribute("data-text", text);
 
   return tweet;
+};
 HTMLActuator.prototype.scoreTweetButton = function shareClick() {
   var rrShareParam = {
       resourceUrl : 'http://shallyu.github.io/SHU2048/', //分享的资源Url
@@ -219,4 +220,4 @@ HTMLActuator.prototype.scoreTweetButton = function shareClick() {
       description : '欢迎大家关注上大物理系，学弟学妹们，我们在这等你~'  //分享的详细描述
     };
     rrShareOnclick(rrShareParam);
-};
+  };
